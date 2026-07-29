@@ -5,50 +5,47 @@ Xây dựng tài liệu học tập toàn diện về Java I/O Streams, từ cơ
 
 ## Cấu trúc khóa học (7 Chương - 26 tiết)
 
-### 📖 Phần Lý Thuyết (10 tiết)
+### 📖 Lộ Trình Chi Tiết
 
-| Chương | Nội dung | Số bài tập |
-|--------|----------|------------|
-| **Chương 1** | File Class - Nền tảng làm việc với file/thư mục | 5 bài |
-| **Chương 2** | Khái niệm Stream & Phân loại | 3 bài |
-| **Chương 3** | InputStream & OutputStream (byte stream) | 5 bài |
-| **Chương 4** | Filtered Stream (BufferedStream, DataStream) | 4 bài |
-| **Chương 5** | Reader & Writer (character stream) | 5 bài |
-| **Chương 6** | InputStreamReader & OutputStreamWriter (cầu nối) | 3 bài |
-| **Chương 7** | Object Stream (Serialization) | 4 bài |
+| Chương | Nội dung | Bài tập | Lab tích hợp | Trạng thái |
+|--------|----------|---------|--------------|------------|
+| **Chương 1** | File Class - Nền tảng làm việc với file/thư mục | 5 bài | Lab 1 (thao tác file cơ bản) | ✅ **Hoàn thành** |
+| **Chương 2** | Khái niệm Stream & Phân loại | 3 bài | Lab 2 (bộ lọc tìm kiếm file) | 🔜 **Đang học** |
+| **Chương 3** | InputStream & OutputStream (byte stream) | 5 bài | Lab 3 (file nhị phân) | ⏳ Chờ |
+| **Chương 4** | Filtered Stream (BufferedStream, DataStream) | 4 bài | — | ⏳ Chờ |
+| **Chương 5** | Reader & Writer (character stream) | 5 bài | Lab 4 (file text & bảng mã) | ⏳ Chờ |
+| **Chương 6** | InputStreamReader & OutputStreamWriter (cầu nối) | 3 bài | — | ⏳ Chờ |
+| **Chương 7** | Object Stream (Serialization) | 4 bài | Lab 5 (truyền đối tượng), Lab 6 (quản lý SV) | ⏳ Chờ |
 
-### 🔧 Phần Thực Hành (16 tiết)
+### 📁 Tài Liệu Đã Tạo
 
-| Lab | Nội dung | Chương liên quan |
-|-----|----------|-----------------|
-| **Lab 1** | Thao tác file & thư mục (tạo, xoá, đổi tên, tìm kiếm) | Chương 1 |
-| **Lab 2** | Xây dựng bộ lọc tìm kiếm file trên ổ đĩa | Chương 1 |
-| **Lab 3** | Thao tác file nhị phân (đọc, ghi, chỉnh sửa) | Chương 3, 4 |
-| **Lab 4** | Thao tác file text (đọc, ghi, chuyển đổi bảng mã) | Chương 5, 6 |
-| **Lab 5** | Truyền đối tượng trên mạng | Chương 7 |
-| **Lab 6** | Quản lý sinh viên với CSDL file nhị phân | Tổng hợp |
+| File | Nội dung |
+|------|----------|
+| [chuong1_file_class.md](file:///c:/LapTrinhMang/Hoc_LTM/chuong1_file_class.md) | Lý thuyết + Bài tập Chương 1 |
+| [chuong2_stream_concept.md](file:///c:/LapTrinhMang/Hoc_LTM/chuong2_stream_concept.md) | Lý thuyết + Bài tập + Lab 2 Chương 2 |
+
+### 📁 Code Sinh Viên
+
+| File | Chương |
+|------|--------|
+| [classFileBasic.java](file:///c:/LapTrinhMang/Hoc_LTM/src/Phan1/classFileBasic.java) | Chương 1 - Code mẫu |
+| [baitap_classFile.java](file:///c:/LapTrinhMang/Hoc_LTM/src/Phan1/baitap_classFile.java) | Chương 1 - Bài tập ✅ |
 
 ## Phương pháp dạy
 
-1. **Mỗi chương** → Giải thích bản chất bằng ví von đời thường → Code mẫu → Bài tập nhỏ
-2. **Bài tập** → Từ cực kỳ đơn giản → Tăng dần độ khó → Bài tập tổng hợp
-3. **Tương tác** → Sinh viên giải bài → Review code → Giải thích sai sót
+1. **Mỗi chương** → Giải thích bản chất bằng ví von đời thường → Code mẫu → Bài tập nhỏ → Lab tích hợp
+2. **Bài tập** → Từ cực kỳ đơn giản → Tăng dần độ khó → Lab tổng hợp cuối chương
+3. **Tương tác** → Sinh viên giải bài → Review code → Giải thích sai sót → Chuyển chương tiếp
 
-## Cấu trúc thư mục dự kiến
+## Cấu trúc thư mục
 
 ```
-c:\LapTrinhMang\Hoc_LTM\src\
-├── classFile/          ← Chương 1: File class
-├── streamBasic/        ← Chương 2-3: Stream cơ bản
-├── filteredStream/     ← Chương 4: Filtered Stream
-├── readerWriter/       ← Chương 5-6: Reader/Writer
-├── objectStream/       ← Chương 7: Object Stream
-└── labs/               ← Các bài Lab tổng hợp
+c:\LapTrinhMang\Hoc_LTM\
+├── chuong1_file_class.md       ← Tài liệu Chương 1 ✅
+├── chuong2_stream_concept.md   ← Tài liệu Chương 2 🔜
+├── implementation_plan.md      ← Lộ trình tổng quan (file này)
+└── src/
+    └── Phan1/                  ← Code Chương 1 ✅
+        ├── classFileBasic.java
+        └── baitap_classFile.java
 ```
-
-## Thứ tự thực hiện
-
-Bắt đầu từ **Chương 1: File Class** → Đưa lý thuyết → Đưa bài tập 1.1 → Chờ sinh viên giải → Review → Tiếp bài 1.2...
-
-> [!IMPORTANT]
-> Bạn có muốn mình bắt đầu ngay từ **Chương 1: File Class** không? Mình sẽ giảng lý thuyết và đưa bài tập đầu tiên cho bạn giải luôn!
